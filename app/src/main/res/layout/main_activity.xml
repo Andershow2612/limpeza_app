@@ -10,7 +10,7 @@
 
     <!-- CardView centralizado -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/centralCard"
+        android:id="@+id/centralCard1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="24dp"

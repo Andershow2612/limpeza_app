@@ -81,6 +81,16 @@
                 android:onClick="suporte"
                 android:text="Suporte ao usuário"
                 android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#1C166C"
+                android:onClick="myAccount"
+                android:text="Minha conta"
+                android:textSize="18sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

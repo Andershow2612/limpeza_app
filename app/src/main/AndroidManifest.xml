@@ -22,14 +22,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".criar_conta" />
+        <activity android:name=".tela_login" />
+        <activity android:name=".CreateAccountActivity" />
         <activity android:name=".loading_page" />
         <activity android:name=".selecao_prop" />
         <activity android:name=".Solicitacao_limpeza" />
         <activity android:name=".senha_virtual" />
         <activity android:name=".suporte_user" />
         <activity android:name=".tela_sucesso" />
+        <activity android:name=".my_account" />
+        <activity android:name=".MinhasSolicitacoesActivity" />
 
     </application>
 

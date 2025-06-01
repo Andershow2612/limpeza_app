@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.centralCard), (v, insets) -> {
+        setContentView(R.layout.main_activity);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.centralCard1), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void segundaTela(View view) {
-        Intent in = new Intent(MainActivity.this, SecondActivity.class);
+        Intent in = new Intent(MainActivity.this, tela_login.class);
         startActivity(in);
     }
 
     public void segundaTerceira(View view) {
-        Intent in = new Intent(MainActivity.this, criar_conta.class);
+        Intent in = new Intent(MainActivity.this, CreateAccountActivity.class);
         startActivity(in);
     }
 }

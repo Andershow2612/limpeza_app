@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".MinhasSolicitacoesActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minhas solicitações"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
+
+    <!-- Campo de busca -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F1F1F1"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Buscar solicitações"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Lista de solicitações -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSolicitacoes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botão Voltar -->
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOLTAR"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:background="#1A237E" />
+</LinearLayout>
